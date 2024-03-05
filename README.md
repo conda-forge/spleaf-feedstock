@@ -3,9 +3,9 @@ About spleaf-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spleaf-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gitlab.unige.ch/jean-baptiste.delisle/spleaf
+Home: https://gitlab.unige.ch/delisle/spleaf
 
-Package license: GPL-3.0-or-later
+Package license: EUPL-1.2
 
 Summary: Symmetric S+LEAF matrix.
 
