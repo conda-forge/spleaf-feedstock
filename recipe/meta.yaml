@@ -1,5 +1,5 @@
 {% set name = "spleaf" %}
-{% set version = "2.1.9" %}
+{% set version = "2.1.10" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spleaf-{{ version }}.tar.gz
-  sha256: 3a2d08fe34f41ccc9e5d433046dd4a0a987dd824cfc5f8301b20eae2e775508d
+  sha256: f97c25574296f2c96873ff576de77a83df986e26fb0d67a839b744a559eef29d
 
 build:
   number: 0
@@ -21,10 +21,11 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - setuptools >=61.0
-    - wheel  
+    - wheel
     - numpy
     - pip
   run:
