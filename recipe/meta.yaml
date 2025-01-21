@@ -1,5 +1,5 @@
 {% set name = "spleaf" %}
-{% set version = "2.1.11" %}
+{% set version = "2.1.12" %}
 
 
 package:
@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/spleaf-{{ version }}.tar.gz
-  sha256: c725b6d422f5f5e138918c280735ad4d94617a452bcfb0669c7a5c5fd6a0e9e1
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/spleaf-{{ version }}.tar.gz
+  sha256: b0cbbb20e17ebc32eba8f3d8b84f1ee2e6e7311f22c4dafe9484f0d1a1e90e94
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
